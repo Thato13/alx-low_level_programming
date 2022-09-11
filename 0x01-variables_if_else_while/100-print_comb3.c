@@ -21,8 +21,8 @@ putchar(',');
 putchar(' ');
 number_2++;
 }
-number_2 = 1;
 number_1++;
+number_2 = number_1 + 1;
 }
 putchar('\n');
 return(0);
