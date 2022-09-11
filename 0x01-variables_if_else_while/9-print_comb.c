@@ -8,7 +8,7 @@ int number = 0;
 while(number <= 9)
 {
 
-putchar(number + '0');
+putchar(number+'0');
 
 if(number <9)
 {
