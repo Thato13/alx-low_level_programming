@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main(void)
+int main()
 {
 print_to_98(0);
 print_to_98(98);
