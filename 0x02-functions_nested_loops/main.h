@@ -1,10 +1,10 @@
+#ifndef MAIN_H
+#define MAIN_H
 #include<unistd.h>
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#ifndef main
-#define main
- jack_bauer(void)
+void jack_bauer(void)
 {
 struct tm* current_time;
 time_t s;
@@ -178,5 +178,6 @@ return 1;
 
 return(0);
 }
+
 #endif
 
