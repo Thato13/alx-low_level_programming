@@ -73,6 +73,22 @@ row++;
 }
 }
 
+void sum_of_multiples(void)
+{
+int check = 0;
+int ref = 1023;
+while(ref > 5)
+{
+if(ref % 3 == 0 || ref % 5 == 0)
+{
+check = check + ref;
+}
+ref--;
+}
+printf("The sum of multiples of 3 or 5 below 1024 is : %d",check);
+}
+
+
 int add(int n, int c)
 {
 
