@@ -1,8 +1,28 @@
 #include<unistd.h>
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 #ifndef main
 
+void jack_bauer(void)
+{
+struct tm* current_time;
+time_t s;
+s = time(NULL);
+current_time = localtime(&s);
+current_time -> tm_hour = 0;
+current_time -> tm_min = 0;
+while(current_time -> tm_hour <= 23)
+{
+while(current_time ->tm_min <= 59)
+{
+printf("%2d:%2d\n",current_time -> tm_hour,current_time -> tm_min);
+current_time -> tm_min++;
+}
+current_time -> tm_min = 0;
+current_time -> tm_hour++;
+}
+}
 int _isalpha(char c)
 {
 if(c <= 122 && c >= 65)
