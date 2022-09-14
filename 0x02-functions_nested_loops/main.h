@@ -46,6 +46,33 @@ printf("\n");
 
 }
 
+void print_times_table(int n)
+{
+int row = 0;
+int col = 0;
+if(n > 15 || n < 0)
+{
+return;
+}else
+{
+while(row <= n)
+{
+while(col <= n)
+{
+printf("%d",row * col);
+if(col < n)
+{
+printf(";  ");
+}
+col++;
+}
+printf("\n");
+col = 0;
+row++;
+}
+}
+}
+
 int add(int n, int c)
 {
 
