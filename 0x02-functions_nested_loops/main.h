@@ -3,8 +3,8 @@
 #include<stdlib.h>
 #include<time.h>
 #ifndef main
-
-void jack_bauer(void)
+#define main
+ jack_bauer(void)
 {
 struct tm* current_time;
 time_t s;
