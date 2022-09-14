@@ -23,6 +23,34 @@ current_time -> tm_min = 0;
 current_time -> tm_hour++;
 }
 }
+
+void times_table(void)
+{
+int row = 0;
+int col = 0;
+while(row <= 9)
+{
+while(col <= 9)
+{
+printf("%d",row * col);
+if(col < 9)
+{
+printf(",  ");
+}
+col++;
+}
+col = 0;
+row++;
+printf("\n");
+}
+
+}
+
+
+
+
+
+
 int _isalpha(char c)
 {
 if(c <= 122 && c >= 65)
