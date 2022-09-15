@@ -339,6 +339,31 @@ set_width(i);
 }
 }
 }
+
+void print_square(int size)
+{
+int i = 0;
+int k = 0;
+if(size == 1)
+{
+_putchar('#');
+_putchar('\n');
+}else if(size > 1)
+{
+for(k; k < size; k++)
+{
+for(i; i < size; i++)
+{
+_putchar('#');
+}
+i = 0;
+_putchar('\n');
+
+}
+
+}
+
+}
 int _islower(char c)
 {
 int checker = c;
