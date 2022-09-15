@@ -306,9 +306,39 @@ n--;
 }
 _putchar('\n');
 }
+void positive_or_negative(int i);
+void set_width(int n)
+{
+int i = 0;
+for(i; n > i; i++)
+{
+_putchar(' ');
+}
+}
 
+void print_diagonal(int n)
+{
+int i = 0;
+if(n == 1)
+{
+_putchar('\\');
+_putchar('\n');
+}else if(n > 1)
+{
+while(n >= 1)
+{
+_putchar('\\');
+_putchar('\n');
+n--;
+i++;
+if(n > 0)
+{
+set_width(i);
+}
 
-
+}
+}
+}
 int _islower(char c)
 {
 int checker = c;
