@@ -117,9 +117,13 @@ printf("\n");
 int add(int n, int c)
 {
 
-return n +c;
+return n + c;
 }
 
+int mul(int a, int c)
+{
+return a * c;
+}
 void print_to_98(int n)
 {
 if(n<=98)
