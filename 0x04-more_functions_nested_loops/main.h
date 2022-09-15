@@ -237,6 +237,21 @@ number++;
 _putchar('\n');
 }
 
+void print_most_numbers(void)
+{
+int number = '0';
+while(number <= '9')
+{
+if(number == '4' || number == '2')
+{
+number++;
+}
+_putchar(number);
+number++;
+}
+_putchar('\n');
+}
+
 void print_alphabet_x10(void)
 {
 char alphabet = 'a';
