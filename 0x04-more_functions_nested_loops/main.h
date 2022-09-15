@@ -388,6 +388,37 @@ printf("%d  ",number);
 }
 
 }
+
+void set_base(int n)
+{
+int i = 0;
+for(i; n > i; i++)
+{
+_putchar('#');
+}
+}
+void print_triangle(int size)
+{
+int i = 0;
+if(size == 1)
+{
+_putchar('#');
+_putchar('\n');
+}else if(size > 1)
+{
+while(size > 0)
+{
+if(size >= 0)
+{
+size--;
+i++;
+set_width(size);
+set_base(i);
+}
+_putchar('\n');
+}
+}
+}
 int _islower(char c)
 {
 int checker = c;
