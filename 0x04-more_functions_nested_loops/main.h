@@ -270,6 +270,32 @@ alphabet = 'a';
 
 }
 
+void more_numbers(void)
+{
+int number = 0;
+int count = 0;
+while(count <= 9)
+{
+while(number <= 14)
+{
+if(number > 9)
+{
+_putchar('1');
+_putchar((number % 10) + '0');
+number++;
+}else
+{
+_putchar(number + '0');
+number++;
+}
+
+}
+number = 0;
+_putchar('\n');
+count++;
+}
+}
+
 int _islower(char c)
 {
 int checker = c;
