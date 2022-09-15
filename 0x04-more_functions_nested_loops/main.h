@@ -364,6 +364,30 @@ _putchar('\n');
 }
 
 }
+
+void fizz_buzz(void)
+{
+int number = 1;
+for(number; number <= 100; number++)
+{
+if(number % 3 == 0)
+{
+printf("Fizz  ");
+continue;
+}else if(number % 5 == 0)
+{
+
+printf("Buzz  ");
+continue;
+}else if(number % 3 == 0 && number % 5 == 0)
+{
+printf("FizzBuzz  ");
+continue;
+}
+printf("%d  ",number);
+}
+
+}
 int _islower(char c)
 {
 int checker = c;
